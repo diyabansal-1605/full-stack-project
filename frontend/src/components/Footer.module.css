@@ -1,0 +1,45 @@
+.footer {
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.123);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links {
+    display: block;
+    color: #555555;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.connect {
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.copyRight {
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+@media(max-width : 622px) {
+    .logoContainer {
+        display: none;
+    }
+}
+
+@media(max-width : 350px) {
+    .footerContainer {
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+}

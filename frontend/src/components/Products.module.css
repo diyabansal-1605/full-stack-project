@@ -1,0 +1,111 @@
+body, html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.productItem h3, p {
+    color: #000000;
+}
+
+.productsContainer {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.leftSidebar {
+    width: 22%;
+    margin-top: 15px;
+    background-color: #fff;
+    border-right: 1px solid #f5f5f5;
+}
+
+.subcategoriesList {
+    padding: 0;
+}
+
+.subcategories {
+    list-style-type: none;
+    padding: 20px;
+    color: #010101;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.128);
+}
+
+.subcategories:hover {
+    background-color: #308616d8;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* products start from here */
+.products {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px 10px; 
+}
+
+.productItem {
+    width: 175px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.162);
+    box-sizing: border-box;
+    margin:7px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productItem:hover {
+    transform: scale(1.05);
+    border-color: #007bff; /* Change this to your desired border color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.productImage {
+    width: 100%;
+    height: 120px;
+    object-fit: contain; 
+    border-radius: 8px;
+}
+
+.productName {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.productQuantity {
+    color: #666;
+    font-size: 12px;
+}
+
+.productPrice {
+    font-size: 13px;
+}
+
+.itemFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addToCart {
+    color: #318616;
+    background-color: #F7FFF9;
+    border: 1px solid #318616;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.addToCart:hover {
+    cursor: pointer;
+}

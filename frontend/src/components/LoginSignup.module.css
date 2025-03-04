@@ -1,0 +1,79 @@
+.loginSignupForm {
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form {
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.123);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24rem;
+    height: auto;
+    gap: 20px;
+    padding: 20px 0px 28px;
+}
+
+.form input{
+    width: 80%;
+    padding: 14px 16px;
+    border-radius: 6px;
+    border: 1px solid #1d2129;
+    outline: none;
+}
+
+.form input:hover {
+    border: 1px solid #0866ff;
+}
+
+.passwordWrapper {
+    width: 100%;
+}
+
+.passwordWrapper input {
+    margin-left: 23px;
+}
+
+.form button {
+    outline: none;
+}
+
+.loginButton {
+    width: 89%;
+    padding: 14px 16px;
+    background-color: #0866ff;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+}
+
+.loginButton:hover {
+    background-color: #0867ffd8;
+    cursor: pointer;
+}
+
+.dontHaveAccountPara {
+    font-size: 1rem;
+}
+ 
+.links {
+    color: #0866ff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.eyeIcon {
+    position: relative;
+    right: 25px;
+}

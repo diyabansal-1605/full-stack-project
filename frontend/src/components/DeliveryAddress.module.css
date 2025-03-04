@@ -1,0 +1,101 @@
+.addressContainer {
+    width: 68%;
+    margin-left: 15px;
+    border: 1px solid #8787875d;
+    border-radius: 8px;
+}
+
+.headingAndButton {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active {
+    background-color: #2874F0;
+}
+
+.active .heading {
+    color: #fff;
+}
+
+.heading {
+    margin-left: 35px;
+    font-size: 1rem;
+}
+
+.addBtn {
+    margin-right: 10px;
+    background-color: #fff;    
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.addressForm {
+    margin-top: 15px;
+    background-color: #2875f009;
+}
+
+.addressForm input, textarea{
+    padding: 15px;
+    margin: 0px 0px 20px 20px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #878787;
+}
+
+textarea {
+    width: 46%;
+}
+
+.submitBtn {
+    margin: 0 0 20px 20px;
+    background-color: #FB641B;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.submitBtn:hover {
+    background-color: #fb661bb6;
+}
+
+.savedAddress p {
+    margin-left: 35px;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+@media(max-width: 342px) {
+    .addBtn {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .heading {
+        font-size: 12px;
+    }
+
+    .addressForm input {
+        font-size: 12px;
+    }
+}
+
+@media(max-width : 305px) {
+
+    .headingAndButton {
+        flex-direction: column;
+    }
+
+    .addressForm input, textarea {
+        padding: 2px;
+        width: 50%;
+    }
+}

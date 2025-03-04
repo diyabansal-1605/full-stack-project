@@ -1,0 +1,86 @@
+.heroSection {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftPart {
+    width: 40%;
+}
+
+.leftPart h1 {
+    font-size: 3.7rem;
+    color: #3D3D3D;
+}
+
+.leftPart p {
+    position: relative;
+    bottom: 20px;
+    font-size: 16px;
+    color: #3D3D3D;
+}
+
+.exploreButton {
+    background-color: #E97862;
+    border: none;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.exploreButton:hover {
+    background-color: #e97962db;
+}
+
+.rightPart {
+    width: 40%;
+}
+
+.rightPart img {
+    width: 100%;
+}
+
+@media(max-width : 1135px) {
+    .leftPart h1 {
+        font-size: 52px;
+    }
+} 
+
+@media(max-width : 985px) {
+    .leftPart h1 {
+        font-size: 45px;
+    }
+} 
+
+@media(max-width : 845px) {
+    .leftPart h1 {
+        font-size: 40px;
+    }
+} 
+
+@media(max-width : 807) {
+    .leftPart h1 {
+        font-size: 35px;
+    }
+} 
+
+@media(max-width : 756px) {
+    .heroSection {
+        flex-direction: column-reverse;
+    }
+
+    .leftPart {
+        width: 100%;
+        text-align: center;
+    }
+
+    .rightPart {
+        width: 80%;
+    }
+} 

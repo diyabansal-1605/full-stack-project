@@ -1,0 +1,166 @@
+.productPage {
+    width: 100%;
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 110px;
+}
+
+.productImage {
+    width: 40%;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.247);
+}
+
+.productImage img {
+    height: 23rem; 
+    max-width: 100%;
+    object-fit: cover;
+    padding: 20px;
+}
+
+/* Right Part */
+
+.productDetails {
+    position: relative;
+    top: 50px;
+}
+
+.productName {
+    color: #1F1F1F;
+}
+
+.productDescription, .productPrice {
+    font-size: 1.1rem;
+    color: #1F1F1F;
+}
+
+.productPrice {
+    font-weight: 500;
+}
+
+.productCapacity {
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+.inclusiveLine {
+    font-size: 0.9rem;
+    color: #666666;
+    position: relative;
+    bottom: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.cartBtn {
+    background-color: #FF9F00;
+    color: #fff;
+    border: 1px solid #FF9F00;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    font-weight: 600;
+}
+
+.quantitySelector {
+    margin-top: 20px;
+}
+
+.reviewBtn {
+    margin-left: 10px;
+    border: 1px solid #FB641B;
+    background-color: #FB641B;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    font-weight: 600;
+}
+
+.reviewForm {
+    margin-top: 20px;
+}
+
+.submitBtn {
+    border: 1px solid #FB641B;
+    background-color: #FB641B;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 8px 8px;
+    font-weight: 600;
+}
+
+.reviewsSection {
+    margin-left: 100px;
+    margin-bottom: 40px;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.265);
+    border-radius: 20px;
+}
+
+.review {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid rgba(128, 128, 128, 0.265);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.reviewInfo {
+    display: flex;
+    gap: 20px;
+}
+
+.name, .date {
+    font-size: 14px;
+    color: #878787;
+}
+
+@media (max-width: 956px) {
+    .productImage {
+        border: none;
+    }
+}
+
+@media (max-width: 565px) {
+    .productPage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productImage {
+        width: 60%;
+        border: none;
+    }
+
+    .productImage img {
+        height: 250px;
+    }
+    
+    .productDetails {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .reviewsSection {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 282px) {
+    .cartBtn {
+        margin-left: 5px;
+    }
+    .reviewBtn {
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+}

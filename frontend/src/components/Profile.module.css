@@ -1,0 +1,155 @@
+.profileContainer {
+   margin-top: 90px;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.leftSide {
+    width: 25%;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.123);
+    border-radius: 8px;
+}
+
+.leftSide div {
+    padding: 25px;
+}
+
+.profilePart {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.greeting {
+    font-size: 12px;
+    display: block;
+}
+
+.profilePic {
+    width: 10%;
+}
+
+.profileName {
+    width: 80%;
+}
+
+.leftSideLinks {
+    border-top: 1px solid rgba(128, 128, 128, 0.562);
+}
+
+.leftSideLinks:hover {
+    background-color: #0867ffc2;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.rightSide {
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.123);
+    border-radius: 8px;
+}
+
+.personalInformation {
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.nameInfo, .emailInfo, .mobileInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    color: #000000;
+    font-weight: 500;
+}
+
+.edit {
+    color: #0867ffea;
+    font-size: 15px;
+}
+
+.edit:hover {
+    cursor: pointer;
+}
+
+.rightSide input {
+    background-color: #f0f0f0;
+    margin-bottom: 40px;
+    width: 90%;
+    padding: 15px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.543);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+  
+/* Styles for input fields when they are in the editable state */
+.rightSide input:read-only {
+    background-color: #f0f0f0;
+    cursor: not-allowed; 
+}
+  
+.rightSide input:not(:read-only) {
+    background-color: #ffffff; 
+    cursor: text; 
+    border-color: #007bff; 
+}
+  
+.rightSide input:focus {
+    outline: none;
+    border-color: #0056b3; 
+}
+
+.saveChangesBtn {
+    margin-left: 40px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #E97862;
+    color: #fff;
+    outline: none;
+    background-color: #E97862;
+    border: 1px solid #E97862;
+}
+
+@media(max-width : 692px) {
+    .leftSide {
+        width: 35%;
+    }
+
+    .rightSide {
+        width: 60%;
+    }
+
+    .profilePart {
+        flex-direction: column;
+        position: relative;
+        right: 40px;
+    }
+
+    .rightSide p {
+        font-size: 14px;
+    }
+
+    .leftSideLinks {
+        font-size: 14px;
+    }
+
+    .profileName {
+        font-size: 14px;
+    }
+}
+
+@media(max-width : 398px) {
+    .rightSide p {
+        font-size: 12px;
+    }
+}
